@@ -1,0 +1,54 @@
+.pub {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 150px;
+
+    .pub-left {
+        background-color: $color2;
+        border-radius: 40px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        a{
+            font-size: 2rem;
+            color: $color4;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                color: $color5;
+                transform: scale(1.1);
+            }
+        }
+    }
+    .pub-right {
+        background-color: $color2;
+        border-radius: 40px;
+        margin-left: 10px;
+        @include center;
+
+        input {
+            background-color: transparent;
+            outline: none;
+            color: $color4;
+            font-size: 1.5rem;
+            padding: 20px;
+            border: 2px solid $color1;
+            border-radius: 40px 0 0 40px;
+        }
+        button {
+            background-color: transparent;
+            color: $color4;
+            font-size: 1.5rem;
+            padding: 20px 30px;
+            border: 2px solid $color1;
+            border-radius: 0 40px 40px 0;
+            cursor: pointer;
+
+            &:hover {
+                color: $color5;
+            }
+        }
+    }
+}

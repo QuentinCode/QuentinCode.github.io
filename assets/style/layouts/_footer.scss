@@ -1,0 +1,58 @@
+footer {
+    text-align: center;
+    margin: 100px 0 30px 0;
+
+    img {
+        width: 5%;
+    }
+    h4 {
+        font-size: 1.5rem;
+        transition: .2s ease;
+        padding-bottom: 10px;
+        a {
+            color: $color4;
+            transition: .2s ease;
+            &:hover {
+                color: $color5;
+                transform: scale(1.1);
+            }
+        }
+    
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    #adress {
+        font-size: 0.8rem;
+        line-height: 2rem;
+        margin-bottom: 20px;
+    }
+    #plan {
+        color: $color4;
+        text-transform: uppercase;
+        padding: 10px;
+        border: 1px solid $color4;
+
+        &:hover {
+            color: $color5;
+        }
+    }
+    #security {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: -28px;
+        
+        a {
+            color: $color4;
+            font-size: 0.8rem;
+            border-bottom: 1px solid $color4;
+
+            &:hover {
+                color: $color5;
+                border-bottom: 1px solid $color5;
+            }
+        }
+    }
+}

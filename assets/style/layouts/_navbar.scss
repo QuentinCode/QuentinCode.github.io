@@ -1,0 +1,43 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+
+    h1 {
+        transition: .3s ease;
+        cursor: pointer;
+        &:hover {
+            color: $color5;
+            transform: scale(1.1);
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+            a {
+                color: $color4;
+                margin: 0 20px;
+                transition: 0.2s ease;
+                &:hover {
+                    color: $color5;
+                    border-bottom: 1px solid $color5;
+                }
+            } 
+    }
+    #contact {
+        border: 1px solid $color4;
+        padding: 5px 10px;
+        border-radius: 40px;
+
+        a {
+            color: $color4;
+            transition: 0.2s ease-in-out;
+            &:hover {
+                color: $color5;
+            }
+        }
+    }
+}

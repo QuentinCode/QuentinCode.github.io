@@ -1,0 +1,24 @@
+$color1: rgb(31,31,31);
+$color2: rgb(41,42,44);
+$color3: rgb(255,254,252);
+$color4: rgb(217,217,217);
+$color5: rgb(98, 98, 240);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body {
+    background-color: $color1;
+    color: $color4;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1350px;
+    margin: 0 auto;
+}

@@ -1,17 +1,66 @@
 .transport {
-    margin: 60px;
-    padding: 30px 50px 50px 50px;
-    border-radius: 40px;
-    text-align: center;
-    background-color: $color2;
+    margin: 30px 30px;
 
-    h2 {
-        text-transform: uppercase;
-        padding-bottom: 20px;
-    }
-    p {
-        width: 50%;
-        margin: 0 auto;
-    }
+    .info-container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin: 50px 0;
 
+        .info-container-left {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h2 {
+                text-transform: uppercase;
+                font-size: 2rem;
+                padding-bottom: 30px;
+            }
+            p {
+                line-height: 1.7rem;
+            }
+        }
+        .info-container-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            img {
+                width: 90%;
+                border-radius: 40px;
+                border: 10px solid $color2;
+            }
+        }
+    }
+    .info-container2 {
+        display: grid;
+        grid-template-columns: 40% 60%;
+
+        .info-container2-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img {
+                width: 100%;
+                border-radius: 40px;
+                border: 10px solid $color2;
+            }
+        }
+        .info-container2-right {
+            width: 80%;
+            text-align: left;
+            margin-left: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           
+            h2 {
+                text-transform: uppercase;
+                font-size: 2rem;
+                padding-bottom: 30px;
+            }
+            p {
+                line-height: 1.7rem;
+            }
+        }
+    }
 }

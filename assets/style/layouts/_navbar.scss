@@ -8,10 +8,17 @@
     h1 {
         transition: .3s ease;
         cursor: pointer;
+        a {
+            color: $color4;
+            transition: .3s ease;
+            &:hover {
+                color: $color5;
+            }
+        }
         &:hover {
-            color: $color5;
             transform: scale(1.1);
         }
+
     }
 
     ul {

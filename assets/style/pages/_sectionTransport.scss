@@ -1,0 +1,17 @@
+.transport {
+    margin: 60px;
+    padding: 30px 50px 50px 50px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: $color2;
+
+    h2 {
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+    p {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+}

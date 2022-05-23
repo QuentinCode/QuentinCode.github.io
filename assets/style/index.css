@@ -136,8 +136,17 @@ body {
   cursor: pointer;
 }
 
-#navbar h1:hover {
+#navbar h1 a {
+  color: #d9d9d9;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#navbar h1 a:hover {
   color: #6262f0;
+}
+
+#navbar h1:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -411,5 +420,23 @@ footer #security a {
 footer #security a:hover {
   color: #6262f0;
   border-bottom: 1px solid #6262f0;
+}
+
+.transport {
+  margin: 60px;
+  padding: 30px 50px 50px 50px;
+  border-radius: 40px;
+  text-align: center;
+  background-color: #292a2c;
+}
+
+.transport h2 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.transport p {
+  width: 50%;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=index.css.map */

@@ -63,24 +63,4 @@
             }
         }
     }
-    .pub-fullwidth {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 80%;
-        margin: 180px auto 50px;
-        background-color: $color2;
-        padding: 50px;
-        border-radius: 40px;
-        
-        a {
-            color: $color4;
-            font-size: 2rem;
-            transition: .3s ease;
-            &:hover {
-                color: $color5;
-                transform: scale(1.1);
-            }
-        }
-    }
 }

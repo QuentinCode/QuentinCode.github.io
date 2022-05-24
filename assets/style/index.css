@@ -187,18 +187,7 @@ body {
   color: #6262f0;
 }
 
-.pub {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  height: 150px;
-}
-
-.pub .pub-left {
-  background-color: #292a2c;
-  border-radius: 40px;
-  margin-right: 10px;
+.pub-fullwidth {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,58 +196,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80%;
+  margin: 150px auto 50px;
+  background-color: #292a2c;
+  padding: 50px;
+  border-radius: 40px;
 }
 
-.pub .pub-left a {
-  font-size: 2rem;
+.pub-fullwidth a {
   color: #d9d9d9;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  font-size: 2rem;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
-.pub .pub-left a:hover {
+.pub-fullwidth a:hover {
   color: #6262f0;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.pub .pub-right {
-  background-color: #292a2c;
-  border-radius: 40px;
-  margin-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pub .pub-right input {
-  background-color: transparent;
-  outline: none;
-  color: #d9d9d9;
-  font-size: 1.5rem;
-  padding: 20px;
-  border: 2px solid #1f1f1f;
-  border-radius: 40px 0 0 40px;
-}
-
-.pub .pub-right button {
-  background-color: transparent;
-  color: #d9d9d9;
-  font-size: 1.5rem;
-  padding: 20px 30px;
-  border: 2px solid #1f1f1f;
-  border-radius: 0 40px 40px 0;
-  cursor: pointer;
-}
-
-.pub .pub-right button:hover {
-  color: #6262f0;
 }
 
 .services-container {
@@ -525,34 +480,5 @@ footer #security a:hover {
 
 .transport .info-container2 .info-container2-right p {
   line-height: 1.7rem;
-}
-
-.transport .pub-fullwidth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80%;
-  margin: 180px auto 50px;
-  background-color: #292a2c;
-  padding: 50px;
-  border-radius: 40px;
-}
-
-.transport .pub-fullwidth a {
-  color: #d9d9d9;
-  font-size: 2rem;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-}
-
-.transport .pub-fullwidth a:hover {
-  color: #6262f0;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 /*# sourceMappingURL=index.css.map */

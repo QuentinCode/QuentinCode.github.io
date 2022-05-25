@@ -6,12 +6,18 @@
   text-decoration: none;
 }
 
+a {
+  z-index: 1000;
+  position: relative;
+}
+
 body {
   background-color: #1f1f1f;
   color: #d9d9d9;
   font-family: 'Poppins', sans-serif;
   max-width: 1350px;
   margin: 0 auto;
+  cursor: none;
 }
 
 .header-grid-container {
@@ -491,6 +497,8 @@ form {
   border-radius: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 10000;
+  position: relative;
 }
 
 form h1 {
@@ -559,5 +567,16 @@ form #success {
   color: #63bb63;
   text-align: center;
   padding-top: 20px;
+}
+
+#cursor {
+  position: absolute;
+  border-radius: 1500px;
+  background-color: #d9d9d9;
+  width: 14px;
+  height: 14px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
 }
 /*# sourceMappingURL=index.css.map */

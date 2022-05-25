@@ -1,0 +1,9 @@
+#cursor {
+    position: absolute;
+    border-radius: 1500px;
+    background-color: $color4;
+    width: 14px;
+    height: 14px;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}

@@ -15,10 +15,15 @@ $color5: rgb(98, 98, 240);
     margin: 0;
     text-decoration: none;
 }
+a {
+    z-index: 1000;
+    position: relative;
+}
 body {
     background-color: $color1;
     color: $color4;
     font-family: 'Poppins', sans-serif;
     max-width: 1350px;
     margin: 0 auto;
+    cursor: none;
 }

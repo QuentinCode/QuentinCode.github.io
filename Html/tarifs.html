@@ -11,44 +11,50 @@
 </head>
 <body>
     <nav id="navbar">
-        <h1><a href="./index.html">Driver Events</a></h1>
+        <h1><a href="../index.html">Driver Events</a></h1>
         <ul id="menu">
-            <li><a href="./index.html">Accueil</a></li>
-            <li id="relative-menu"><a href="./Html/transportVTC.html">Transports VTC</a>
+            <li><a href="../index.html">Accueil</a></li>
+            <li id="relative-menu"><a href="./transportVTC.html">Transports VTC</a>
                 <ul>
                     <li><a href="">Tranferts</a></li>
                     <li><a href="">Evenements professionnels</a></li>
                     <li><a href="">Evenements privés</a></li>
                 </ul>
             </li>
-            <li><a href="./Html/solutionpourentreprise.html">Solution pour entreprise</a></li>
+            <li><a href="./solutionpourentreprise.html">Solution pour entreprise</a></li>
             <li><a href="./tarifs.html">Tarifs et réservations</a></li>
         </ul>
-        <span id="contact"><a href="./Html/contactus.html"> Contact US</a></span>
+        <span id="contact"><a href="./contactus.html"> Contact US</a></span>
     </nav>
 
-    <div id="overlay">
-        <form onsubmit="event.preventDefault(); validateForm();" id="Form">
-            <h1>Contactez-nous</h1>
-
-            <label for="name">Nom:</label>
-            <input type="text" id="name" placeholder="Votre nom" required>
-            <small class="error"></small>
-
-            <label for="email">Email:</label>
-            <input type="text" id="email" placeholder="Votre email" required>
-            <small class="error"></small>
-
-            <label for="message">Message:</label>
-            <textarea id="message" placeholder="Votre message" rows="6" required></textarea>
-            <small class="error"></small>
-
-            <div class="center">
-                <input type="submit" value="Envoyer">
-                <p id="success"></p>
+    <section class="tarif-container">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="from" class="class-from">From</label>
+                <div class="input-visual">
+                    <input type="text" id="from" placeholder="Origine" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="to" class="class-from">To</label>
+                <div class="input-visual">
+                    <input type="text" id="to" placeholder="Destination" class="form-control">
+                </div>
             </div>
         </form>
-    </div>
+        <div class="div-btn">
+            <button class="btn" onclick=calcRoute()>Calculer</button>
+        </div>
+        <div class="container-map">
+            <div id="googleMap">
+
+            </div>
+        </div>
+        <div id="output">
+
+        </div>
+    </section>
+
 
     <footer>
         <img src="https://www.driver-events.fr/wp-content/uploads/2018/04/cropped-logo-driver-events.png" alt="Logo Driver events">
@@ -67,6 +73,7 @@
             <li><a href="">Politique de confidentialité</a></li>
         </ul>
     </footer>
-    <script src="../JS/index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvlzWicOvHs5prypIcPQyUzOBUS0u9J_I&libraries=places"></script>
+    <script src="../JS/Tarif.js"></script>
 </body>
 </html>

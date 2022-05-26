@@ -15,6 +15,22 @@ $color5: rgb(98, 98, 240);
     margin: 0;
     text-decoration: none;
 }
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: $color2;
+    border-radius: 100vw;
+    margin-block: .5rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $color4;
+    border-radius: 100vw;
+
+    &:hover {
+        background-color: rgb(100, 100, 100);
+    }
+}
 a {
     z-index: 1000;
     position: relative;
@@ -25,5 +41,5 @@ body {
     font-family: 'Poppins', sans-serif;
     max-width: 1350px;
     margin: 0 auto;
-    cursor: none;
+//     cursor: none;
 }

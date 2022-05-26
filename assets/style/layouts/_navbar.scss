@@ -21,18 +21,47 @@
 
     }
 
-    ul {
+    #menu {
         display: flex;
         justify-content: space-around;
+        
             a {
                 color: $color4;
                 margin: 0 20px;
-                transition: 0.2s ease;
+                transition: .2s ease;
                 &:hover {
                     color: $color5;
                     border-bottom: 1px solid $color5;
                 }
-            } 
+            }
+            #relative-menu {
+                position: relative;
+            }
+            ul {
+                margin: 20px 0 0 0;
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                background-color: $color2;
+                width: 160%;
+                border-radius: 0 0 10px 10px;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+                transition: .3s ease-in-out;
+                li {
+                    padding: 20px 0;
+                    text-align: center;
+                }
+            }
+            li {
+                &:hover > ul {
+                    opacity: 1;
+                    visibility: visible;
+                    
+                }
+            }
     }
     #contact {
         border: 1px solid $color4;

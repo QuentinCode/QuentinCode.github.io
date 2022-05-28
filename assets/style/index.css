@@ -681,4 +681,35 @@ footer #security a:hover {
   font-size: 1.5rem;
   margin: 20px auto;
 }
+
+#legal {
+  margin: 300px auto;
+  text-align: center;
+}
+
+#legal h1 {
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  font-size: 2rem;
+}
+
+#legal ul {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+#confidentiality {
+  margin: 300px auto;
+  text-align: center;
+}
+
+#confidentiality h1 {
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  font-size: 2rem;
+}
+
+#confidentiality a {
+  color: #6262f0;
+}
 /*# sourceMappingURL=index.css.map */

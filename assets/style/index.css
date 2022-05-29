@@ -38,6 +38,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1400px) {
+  body {
+    padding: 10px 30px;
+  }
+}
+
 .header-grid-container {
   display: -ms-grid;
   display: grid;

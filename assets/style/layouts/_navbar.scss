@@ -25,6 +25,13 @@
         display: flex;
         justify-content: space-around;
         
+        @media screen and (max-width: 1200px) {
+            font-size: 0.9rem;
+        }
+        @media screen and (max-width: 1000px) {
+            font-size: 0.8rem;
+        }
+        
             a {
                 color: $color4;
                 margin: 0 20px;
@@ -32,6 +39,12 @@
                 &:hover {
                     color: $color5;
                     border-bottom: 1px solid $color5;
+                }
+                @media screen and (max-width: 1110px) {
+                    margin: 0 10px;
+                }
+                @media screen and (max-width: 1000px) {
+                    margin: 0 5px;
                 }
             }
             #relative-menu {
@@ -67,7 +80,9 @@
         border: 1px solid $color4;
         padding: 5px 10px;
         border-radius: 40px;
-
+        @media screen and (max-width: 1110px) {
+            font-size: 0.9rem;
+        }
         a {
             color: $color4;
             transition: 0.2s ease-in-out;

@@ -189,6 +189,18 @@ body {
       justify-content: space-around;
 }
 
+@media screen and (max-width: 1200px) {
+  #navbar #menu {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #navbar #menu {
+    font-size: 0.8rem;
+  }
+}
+
 #navbar #menu a {
   color: #d9d9d9;
   margin: 0 20px;
@@ -199,6 +211,18 @@ body {
 #navbar #menu a:hover {
   color: #6262f0;
   border-bottom: 1px solid #6262f0;
+}
+
+@media screen and (max-width: 1110px) {
+  #navbar #menu a {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #navbar #menu a {
+    margin: 0 5px;
+  }
 }
 
 #navbar #menu #relative-menu {
@@ -236,6 +260,12 @@ body {
   border: 1px solid #d9d9d9;
   padding: 5px 10px;
   border-radius: 40px;
+}
+
+@media screen and (max-width: 1110px) {
+  #navbar #contact {
+    font-size: 0.9rem;
+  }
 }
 
 #navbar #contact a {

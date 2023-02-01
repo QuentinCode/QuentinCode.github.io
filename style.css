@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #B4EFFF;
+    transition: all 0.4s ease-in-out;
+    font-family: 'Montserrat';
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero span {
+    font-size: 5rem;
+
+}
+.story {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.story span {
+    font-size: 5rem;
+
+}
+.dev {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dev span {
+    font-size: 5rem;
+
+}
+.dev span:nth-child(3) {
+    padding-right: 30px;
+}
+.eat {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eat span {
+    font-size: 5rem;
+}
+.eat span:nth-child(2) {
+    padding-right: 30px;
+}
+
+.gif {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif img {
+    border-radius: 10px;
+}
+
+.error404 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.error404 h1 {
+    font-size: 118px;
+    font-weight: 100;
+}
+.error404 h2 {
+    font-size: 118px;
+    font-weight: 100;
+    z-index: 200;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+}
+.rond {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #B4EFFF;
+    position: absolute;
+    transform: translateX(-69px);
+    transition: All 1.5s ease-in-out;
+    transform-origin: center;
+}
+.rond:hover {
+    background: #FAD5B1;
+}
+#key {
+    position: absolute;
+    cursor: grab;
+    bottom: 0;
+}
+#serrure {
+    position: absolute;
+    transform: translate(-68px, 10px);
+    width: 40px;
+}

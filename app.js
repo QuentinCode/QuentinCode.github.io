@@ -32,7 +32,6 @@ draggableElement.addEventListener("mousemove", drag);
 function dragStart(e) {
   initialX = e.clientX - xOffset;
   initialY = e.clientY - yOffset;
-
   isDragging = true;
   draggableElement.style.cursor = "grabbing";
 }
@@ -73,7 +72,7 @@ document.documentElement.style.cursor = `url(${key.src}) ${size / 2} ${
 const rond = document.querySelector(".rond");
 const error = document.querySelector(".error404")
 
-rond.addEventListener("click", () => {
+rond.addEventListener("mouseover", () => {
   rond.style.width = "100vw";
   rond.style.height = "100vh";
   rond.style.borderRadius = "0%";
@@ -90,23 +89,3 @@ rond.addEventListener("click", () => {
   }, 1000);
 
 });
-
-// const target = document.createElement("div");
-// target.style.backgroundColor = "red";
-// target.style.width = "10px";
-// target.style.height = "10px";
-// target.style.position = "fixed";
-// target.style.left = `${window.innerWidth / 2 - 73}px`;
-// target.style.top = `${window.innerHeight / 2 - 5}px`;
-// document.body.appendChild(target);
-
-// draggableElement.addEventListener("mouseup", function(e) {
-
-//     if () {
-//       rond.style.width = "100vw";
-//       rond.style.height = "100vh";
-//       rond.style.borderRadius = "0%";
-//       rond.style.transform = "translateX(0)";
-//       rond.style.transformOrigin = "center";
-//     }
-//   });
